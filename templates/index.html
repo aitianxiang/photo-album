@@ -1,0 +1,62 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<title>帅比图和花仙子的相册</title>
+<meta http-equiv="content-type" content="text/html;charset=utf-8">
+<link type="text/css" rel="stylesheet" href="{{ url_for('static', filename='css/zzsc.css') }}" />
+</head>
+<body>
+<section class="cntr">
+	<div class="m10">
+		<h2 id="example" class="mt20 fcc4">给花仙子的圣诞礼物</h2>
+		<div class="cntr mt20">
+			<ul class="pgwSlideshow">
+			<li><img src="{{ url_for('static', filename='images/01.jpg') }}" alt="San Francisco, USA" data-description="Golden Gate Bridge"></li>
+			<li><img src="{{ url_for('static', filename='images/02.jpg') }}" alt=""></li>
+			<li><img src="{{ url_for('static', filename='images/03.jpg') }}" alt="" data-large-src="{{ url_for('static', filename='images/03.jpg') }}"></li>
+			<li><img src="{{ url_for('static', filename='images/04.jpg') }}" alt=""></li>
+			<li><img src="{{ url_for('static', filename='images/05.jpg') }}" alt=""></li>
+			<li><img src="{{ url_for('static', filename='images/06.jpg') }}" alt=""></li>
+			<li><img src="{{ url_for('static', filename='images/07.jpg') }}" alt=""></li>
+			<li><img src="{{ url_for('static', filename='images/08.jpg') }}" alt=""></li>
+			<li><img src="{{ url_for('static', filename='images/09.jpg') }}" alt=""></li>
+			<li><img src="{{ url_for('static', filename='images/10.jpg') }}" alt=""></li>
+			<li><img src="{{ url_for('static', filename='images/11.jpg') }}" alt=""></li>
+			<li><img src="{{ url_for('static', filename='images/12.jpg') }}" alt="Monaco"></li>
+			</ul>
+		</div>
+        <div class="slideshowConfig">
+			<table class="mt15 fs08">
+				<tbody>
+					<tr>
+						<td>&nbsp;Slideshow style:</td>
+						<td><input type="radio" name="style" id="styleDark" value="dark" checked="checked"> <label for="styleDark" class="itl">Dark (default)</label> <input type="radio" name="style" id="styleLight" value="light" class="ml10"> <label for="styleLight" class="itl">Light</label></td>
+					</tr>
+					<tr>
+						<td>&nbsp;Transition effect:</td>
+						<td>
+                            <input type="radio" name="transitionEffect" id="transitionEffectSliding" value="sliding" checked="checked">
+                            <label for="transitionEffectSliding" class="itl">Sliding</label>
+                            <input type="radio" name="transitionEffect" id="transitionEffectFading" value="fading" class="ml10">
+                            <label for="transitionEffectFading" class="itl">Fading</label>
+                        </td>
+					</tr>
+					<tr>
+						<td>&nbsp;Display options:</td>
+						<td><input type="checkbox" name="displayList" id="displayList" value="true" checked="checked"> <label for="displayList" class="itl">List</label> <input type="checkbox" name="displayControls" id="displayControls" value="true" checked="checked" class="ml10"> <label for="displayControls" class="itl">Controls</label>
+                            <input type="checkbox" name="maxHeight" id="maxHeight" value="true" class="ml10"> <label for="maxHeight" class="itl">Max-height to 450px (you can choose the size via the option)</label></td>
+					</tr>
+				</tbody>
+			</table>
+			<div class="mt10 itl">To see all available gallery options, <a href="javascript:void(0)" data-goto="pluginOptions" class="fcc4">click here</a>.</div>
+		</div>
+	</div>    
+</section>
+<script src="{{ url_for('static', filename='js/jquery.min.js') }}" type="text/javascript"></script>
+
+<div style="text-align:center;margin:50px 0; font:normal 14px/24px 'MicroSoft YaHei';">
+<p>不支持IE8及以下浏览器。</p>
+<p>作者：帅比图</p>
+</div>
+</body>
+</html>
